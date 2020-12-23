@@ -1,7 +1,7 @@
-A modern, responsive website built around an dynamic landing page for TaskForce, a social
+A modern, responsive website built around a dynamic landing page for TaskForce, a social
 and administrative support system at NIT Trichy.
 
-Feedback comments are not only welcome, but strongly encouraged :)
+Feedback and comments are welcome :)
 
 -Karthik 
 
@@ -9,9 +9,6 @@ Feedback comments are not only welcome, but strongly encouraged :)
 Credits:
 	Template:
 		Landed by HTML5 UP
-
-	Demo Images:
-		Unsplash (unsplash.com)
 
 	Icons:
 		Font Awesome (fontawesome.io)
