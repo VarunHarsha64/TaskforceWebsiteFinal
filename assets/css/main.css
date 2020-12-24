@@ -72,7 +72,7 @@ input, select, textarea {
 	appearance: none;
 }
 
- .photo {
+ /* .photo {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -82,8 +82,47 @@ input, select, textarea {
 .photo > span {
 	padding:0 4px;
 	margin:4px;
-} 
+}  */
 
+.photo {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+ /* .photo img {
+	padding: 2px 4px;
+	margin: 4px;
+}  */
+
+div.image-card {
+	background-color: #f9c203;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  margin: 10px;
+	  border-style:hidden;
+	  border-radius: 4px;
+	  border-radius: 4px;
+}
+
+.image-card:hover {
+	
+		border-style: solid;
+		border-color:#f9c203;
+		border-width: 2px;
+		border-radius: 4px;
+}
+
+img {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+div.info {
+	color: #181920;
+	font-weight: bold;
+	text-align: centre;
+	padding: 1px 10px;
+}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
   .column {
