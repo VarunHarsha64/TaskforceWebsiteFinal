@@ -4266,29 +4266,30 @@ img {
 
 	}
 /* Scroll snapping */
-/* OVERFLOW OF IMG CARDS, FOOTER NOT SEEN */
- html{
+
+html{
 	scroll-snap-type: y mandatory;
 }
 
 section {
-	height: 100vh;
+	/* height: 200vh; */
 	scroll-snap-align: start;
-
 }  
 
- section #six, #seven, footer {
+section #seven, footer {
 	height:auto;
 	scroll-snap-align: start;
-} 
+}   
 
-/* div #page-wrapper {
-	scroll-snap-type: y proximity;
+ /* DOESN'T WORK!! 
+ div .snap-container {
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
 }
 
-section #banner, #one, #two, #three, #four, #five, #six, #seven, footer {
+div .header, section #banner, #one, #two, #three, #four, #five, #six, #seven, footer #footer{
 	scroll-snap-align: start;
-}  */
+}   */
 
 
 
