@@ -117,6 +117,7 @@ div.image-card {
 	width: 360px;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
+	transition: transform 0.2s;  /* for image card zoom on hover */
 }
 
 img {
@@ -143,6 +144,10 @@ img {
 
 .image-card:hover .info {
 	height:30%;
+}
+
+.image-card:hover {            /* for image card zoom on hover */
+	transform: scale(1.05); 
 }
 
 .text {
