@@ -4265,6 +4265,12 @@ img {
 					}
 
 	}
+
+.icons li a:hover{
+	font-size: 17px;
+	transform: scale(1.5);
+}
+
 /* Scroll snapping */
 
 html{
