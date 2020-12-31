@@ -108,6 +108,7 @@ div.info {
 	padding: 1px 10px;
 }  */
 
+
 div.image-card {
 	background-size:cover;
 	background-repeat: no repeat;
@@ -119,6 +120,7 @@ div.image-card {
 	border-top-right-radius: 4px;
 	transition: transform 0.2s;  /* for image card zoom on hover */
 }
+
 
 img {
 	display:block;
@@ -147,8 +149,9 @@ img {
 }
 
 .image-card:hover {            /* for image card zoom on hover */
-	transform: scale(1.05); 
+	transform: scale(1.03);
 }
+
 
 .text {
 	white-space: nowrap;
@@ -4272,7 +4275,7 @@ img {
 	}
 
 .icons li a:hover{
-	font-size: 17px;
+	/* font-size: 17px; */
 	transform: scale(1.5);
 }
 
@@ -4291,6 +4294,50 @@ section #seven, footer {
 	height:auto;
 	scroll-snap-align: start;
 }   
+
+/* For nav underline active */
+#nav ul {
+	list-style: none;
+	display: table;
+	text-align: center;
+	padding: 0;
+	margin: auto;
+	width: 500px;
+}
+
+#nav ul li { 
+	display: table-cell; 
+	position: relative;
+	padding: 2px 10px; 
+}
+
+nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	/* letter-spacing: 0.15em; */
+	display: inline-block;
+	position: relative;
+	font-weight: 600;
+}
+#nav ul li a:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #f9c203;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+#nav ul li a:hover:after {
+	width: 100%;
+	left: 0;
+}
+
+
+
 
  /* DOESN'T WORK!! 
  div .snap-container {
