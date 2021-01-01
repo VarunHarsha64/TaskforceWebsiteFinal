@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-    if ($(this).scrollTop() > -10) {
+    if ($(this).scrollTop() > 0) {
         $( ".header #background").fadeIn();
     }
     else {

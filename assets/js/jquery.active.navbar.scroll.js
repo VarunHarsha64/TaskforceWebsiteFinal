@@ -1,84 +1,37 @@
-// // Cache selectors
-// var lastId,
-//     topMenu = $("#top-menu"),
-//     topMenuHeight = topMenu.outerHeight()+15,
-//     // All list items
-//     menuItems = topMenu.find("a"),
-//     // Anchors corresponding to menu items
-//     scrollItems = menuItems.map(function(){
-//       var item = $($(this).attr("href"));
-//       if (item.length) { return item; }
-//     });
+//DOESN'T WORK YET 
 
-// // Bind click handler to menu items
-// // so we can get a fancy scroll animation
-// menuItems.click(function(e){
-//   var href = $(this).attr("href"),
-//       offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-//   $('html, body').stop().animate({ 
-//       scrollTop: offsetTop
-//   }, 300);
-//   e.preventDefault();
-// });
+$(document).ready(function() {
+    $('a[href*=#]').bind('click', function(e) {
+            e.preventDefault(); // prevent hard jump, the default behavior
 
-// // Bind to scroll
-// $(window).scroll(function(){
-//    // Get container scroll position
-//    var fromTop = $(this).scrollTop()+topMenuHeight;
-   
-//    // Get id of current scroll item
-//    var cur = scrollItems.map(function(){
-//      if ($(this).offset().top < fromTop)
-//        return this;
-//    });
-//    // Get the id of the current element
-//    cur = cur[cur.length-1];
-//    var id = cur && cur.length ? cur[0].id : "";
-   
-//    if (lastId !== id) {
-//        lastId = id;
-//        // Set/remove active class
-//        menuItems
-//          .parent().removeClass("active")
-//          .end().filter("[href='#"+id+"']").parent().addClass("active");
-//    }                   
-// });
-$(document).ready(function () {
-    $(document).on("scroll", onScroll);
-    
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-        
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-      
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
+            var target = $(this).attr("href"); // Set the target as variable
+
+            // perform animated scrolling by getting top-position of target-element and set it as scroll target
+            $('html, body').stop().animate({
+                    scrollTop: $(target).offset().top
+            }, 600, function() {
+                    location.hash = target; //attach the hash (#jumptarget) to the pageurl
+            });
+
+            return false;
     });
 });
 
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('#menu-center a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#nav ul li a').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
+$(window).scroll(function() {
+    var scrollDistance = $(window).scrollTop();
+
+    // Show/hide menu on scroll
+    //if (scrollDistance >= 850) {
+    //		$('nav').fadeIn("fast");
+    //} else {
+    //		$('nav').fadeOut("fast");
+    //}
+
+    // Assign active class to nav links while scolling
+    $('.page-section').each(function(i) {
+            if ($(this).position().top <= scrollDistance) {
+                    $('#nav a.active').removeClass('active');
+                    $('.#nav a').eq(i).addClass('active');
+            }
     });
-}
+}).scroll();

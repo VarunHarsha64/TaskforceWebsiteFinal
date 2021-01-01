@@ -4279,23 +4279,23 @@ img {
 	transform: scale(1.5);
 }
 
-/* Scroll snapping */
+/* Scroll snapping
 
 html{
 	scroll-snap-type: y mandatory;
 }
 
 section {
-	/* height: 200vh; */
+	/* height: 200vh; 
 	scroll-snap-align: start;
-}  
+}  */
 
-section #seven, footer {
+/* section #seven, footer {
 	height:auto;
 	scroll-snap-align: start;
-}   
+}    */ 
 
-/* For nav underline active DOESN'T WORK YET */
+/* For nav underline active */
 nav ul {
 	list-style: none;
 	display: table;
@@ -4339,8 +4339,6 @@ nav ul li a {
 #nav ul li a .active {
 	color: #f9c203;
 }
-
-
 
 
 
