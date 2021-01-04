@@ -1,7 +1,7 @@
 //DOESN'T WORK YET 
 
-$(document).ready(function() {
-    $('a[href*=#]').bind('click', function(e) {
+$(document).ready(function() { 
+    $('a[href*=\\#]').bind('click', function(e) {
             e.preventDefault(); // prevent hard jump, the default behavior
 
             var target = $(this).attr("href"); // Set the target as variable
@@ -30,6 +30,7 @@ $(window).scroll(function() {
     // Assign active class to nav links while scolling
     $('.page-section').each(function(i) {
             if ($(this).position().top <= scrollDistance) {
+                    console.log("hi");
                     $('#nav a.active').removeClass('active');
                     $('.#nav a').eq(i).addClass('active');
             }

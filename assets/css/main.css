@@ -4319,6 +4319,7 @@ nav ul li a {
 	position: relative;
 	font-weight: 600;
 }
+
 #nav ul li a:after {
 	background: none repeat scroll 0 0 transparent;
 	bottom: 0;
@@ -4336,9 +4337,10 @@ nav ul li a {
 	left: 0;
 }
 
-#nav ul li a .active {
+#nav ul li a.active {
 	color: #f9c203;
 }
+
 
 
 
