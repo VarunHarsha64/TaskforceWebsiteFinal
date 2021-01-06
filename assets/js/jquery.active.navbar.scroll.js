@@ -1,38 +1,53 @@
-//DOESN'T WORK YET 
+// for adding active class to nav link once it is clicked
+var header = document.getElementById("for-active");
+var btns = header.getElementsByClassName("act");
+for( var i=0 ; i < btns.length ; i++) {
+        btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                if( current.length > 0) {
+                        current[0].className = current[0].className.replace(" active", "");
+                }
+                this.className += " active";
+        });
+}
 
-$(document).ready(function() { 
-    $('a[href*=\\#]').bind('click', function(e) {
-            e.preventDefault(); // prevent hard jump, the default behavior
-
-            var target = $(this).attr("href"); // Set the target as variable
-
-            // perform animated scrolling by getting top-position of target-element and set it as scroll target
+// for adding and removing active class on nav links while scrolling
+$(document).ready(function () {
+        $(document).on("scroll", onScroll);
+        
+        //smoothscroll
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
+            
+            $('a').each(function () {
+                $(this).removeClass('active');
+            })
+            $(this).addClass('active');
+          
+            var target = this.hash,
+                menu = target;
+            $target = $(target);
             $('html, body').stop().animate({
-                    scrollTop: $(target).offset().top
-            }, 600, function() {
-                    location.hash = target; //attach the hash (#jumptarget) to the pageurl
+                'scrollTop': $target.offset().top+2
+            }, 500, 'swing', function () {
+                window.location.hash = target;
+                $(document).on("scroll", onScroll);
             });
-
-            return false;
+        });
     });
-});
-
-$(window).scroll(function() {
-    var scrollDistance = $(window).scrollTop();
-
-    // Show/hide menu on scroll
-    //if (scrollDistance >= 850) {
-    //		$('nav').fadeIn("fast");
-    //} else {
-    //		$('nav').fadeOut("fast");
-    //}
-
-    // Assign active class to nav links while scolling
-    $('.page-section').each(function(i) {
-            if ($(this).position().top <= scrollDistance) {
-                    console.log("hi");
-                    $('#nav a.active').removeClass('active');
-                    $('.#nav a').eq(i).addClass('active');
+    
+    function onScroll(event){
+        var scrollPos = $(document).scrollTop();
+        $('#nav a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('#nav ul li a').removeClass("active");
+                currLink.addClass("active");
             }
-    });
-}).scroll();
+            else{
+                currLink.removeClass("active");
+            }
+        });
+    }

@@ -1,56 +1,26 @@
-// $('.image-slider-box').slick({
-//     autoplay: true,
-//     autoplaySpeed: 1000,
-//     slidesToShow: 4,
-//     slidesToScroll: 1,
-//     arrows: false
-// });
+var slideIndex=1;
+showSlides(slideIndex);
 
-const next = document.getElementById('next');
-const prev = document.getElementById('prev');
-const images = document.querySelector('.image-slider-box');
+function plusSlides(n) {
+    showSlides(slideIndex+= n);
+}
 
-let current_card = 0;
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-next.addEventListener('click', () => {
-    images.style.transitionDuration = "0.5s";
-    images.style.transform = "translate(-200px)";
-});
-
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const images = document.getElementsByClassName('image-slider-box');
-    const first_card_clone = images.children[0].cloneNode(true);
-    const last_card_clone = images.children[images.children.length - 1].cloneNode(true);
-    images.appendChild(first_card_clone);
-    images.insertBefore(last_card_clone, images.children[0]);
-    images.style.transitionDuration = "0.0s";
-    images.style.transform = 'translate(-200px)';
-});
-
-let current_card=1;
-next.addEventListener('click', e=> {
-    if(!(current_card > images.children.length)) {
-        setTimeout(() => {
-            current_card++;
-            images.style.transitionDuration = "0.5s";
-            images.style.transform = 'translate(-${current_card*200}px)';
-        }, 10);
-    } else {
-        return;
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if(n >slides.length) { slideIndex = 1; }
+    if(n < 1) { slideIndex = slides.length; }
+    for( i=0 ; i<slides.length ; i++) {
+        slides[i].style.display="none";
     }
-});
-
-prev.addEventListener('click', e => {
-    if(current_card > 0) {
-        setTimeout(() => {
-            current_card--;
-            images.style.transitionDuration = "0.5s";
-            images.style.transform = 'translate(-${current_card*200}px)';
-        }, 10);
-    } else {
-        return;
+    for( i=0 ; i<dots.length ; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
     }
-});
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
