@@ -3637,13 +3637,17 @@ img {
 		
 		}
 
-		@keyframes test{        /*added by me */
+		@keyframes test{        /* banner text animation */
 			from {transform: rotateX(0deg);}
 			to {transform: rotateX(360deg);}
 		}
-
+		@keyframes opening{   /*banner image png animation */
+			from {transform: scale(2);}
+			to {transform: scale(1);}
+		}
 		#banner .content img {
-			/* width: 100%; */
+			animation-name: opening;
+			animation-duration: 1s;
 		}
 		#banner .content p{
 			transition: transform 2s;
