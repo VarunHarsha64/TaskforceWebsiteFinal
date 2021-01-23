@@ -3592,7 +3592,7 @@ img {
 	#banner {
 		background-attachment: fixed;
 		background-color: #272833;
-		background-image: url("../../images/Websiteopen.png");
+		background-image: url("../../images/WebsiteopenBG.png");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3628,7 +3628,7 @@ img {
 			display: inline-block;
 			/*margin-right: 1%; */
 			max-width: 95%;
-			margin-top: 200px;
+			margin-top: 0px;
 			padding: 4em;
 			position: relative;
 			text-align: center;
@@ -3637,19 +3637,29 @@ img {
 		
 		}
 
-		@keyframes test{
+		@keyframes test{        /*added by me */
 			from {transform: rotateX(0deg);}
 			to {transform: rotateX(360deg);}
 		}
 
+		#banner .content img {
+			/* width: 100%; */
+		}
 		#banner .content p{
 			transition: transform 2s;
 			animation-name: test;
 			animation-duration: 2s;
 			animation-delay: 2s;
 			animation-iteration-count: 1;
-			
-			
+		}
+
+		@media screen and (min-width: 1400px) {
+			#banner-logo{
+			position: relative;
+			width: 700px;
+			height: auto;
+			background-position: center center;
+			}
 		}
 
 			
@@ -3668,8 +3678,8 @@ img {
 					top: 0;
 				}
 
-			#banner .content .image {
-				
+			/* #banner .content .image {
+				                                OLD BANNER LOGO CSS
 				border-radius: 100%;
 				display: block;
 				height: 18em;
@@ -3680,11 +3690,11 @@ img {
 				
 			}
 
-				#banner .content .image img {
+				/* #banner .content .image img {
 					border-radius: 100%;
 					display: block;
 					width: 100%;
-				}
+				} */ 
 
 	body.is-touch #banner {
 		background-attachment: scroll;
