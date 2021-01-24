@@ -3637,12 +3637,12 @@ img {
 		
 		}
 
-		@keyframes test{        /* banner text animation */
+		/* @keyframes test{        /* banner text animation 
 			from {transform: rotateX(0deg);}
 			to {transform: rotateX(360deg);}
-		}
+		} */
 
-		@keyframes fadeinUP {
+		/* @keyframes fadeinUP {
 			from {
 				opacity: 0;
 				transform: translateY(2000px);
@@ -3655,7 +3655,7 @@ img {
 				-ms-transform: translateY(0);
 				transform: translateY(0);
 			}
-		}
+		} */
 
 		@keyframes fadeinRight {
 			from {
@@ -3785,7 +3785,7 @@ img {
 			height: 2px;
 			max-width: 288px;
 			width: 20%;
-			margin: 0 40% 0;
+			margin: 20px 40% 0;
 	}
 
 		#footer .icons .icon.alt {
@@ -4235,7 +4235,8 @@ img {
 				}
 
 					#navPanel .link:hover {
-						color: inherit !important;
+						color: #f9c203 !important;
+						letter-spacing: 2px;
 					}
 
 					#navPanel .link:first-child {
