@@ -3707,6 +3707,7 @@ img {
 			animation-iteration-count: 1;
 			padding: 20px 0 0;
 			margin: 0;
+			color: darkblue;
 		}
 		#RightFade {
 			animation-name: fadeinRight;
@@ -3714,6 +3715,7 @@ img {
 			animation-iteration-count: 1;
 			padding: 0;
 			margin: 0;
+			color: darkblue;
 		}
 		@media screen and (min-width: 1400px) {
 			#banner-logo{
@@ -3768,6 +3770,22 @@ img {
 		background: #272833;
 		padding: 6em 0;
 		text-align: center;
+	}
+
+	#footer h2 {
+		font-size: 2em;
+		line-height: 1.5em;
+		letter-spacing: -0.025em;
+	}
+	
+	#footer h2::after {
+			background: #f9c203;
+			content: '';
+			display: block;
+			height: 2px;
+			max-width: 288px;
+			width: 20%;
+			margin: 0 40% 0;
 	}
 
 		#footer .icons .icon.alt {
