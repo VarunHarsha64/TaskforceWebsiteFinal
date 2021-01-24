@@ -4184,8 +4184,9 @@ img {
 					}
 
 					#titleBar .toggle:before {
-						background: #e44c65; 
-						color: rgba(255, 255, 255, 0.5);
+						background: transparent; 
+						/* color: rgba(255, 255, 255, 0.5); */
+						color: #f9c203;
 						content: '\f0c9';
 						display: block;
 						font-size: 18px;
