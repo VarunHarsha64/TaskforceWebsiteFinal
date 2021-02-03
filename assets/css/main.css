@@ -2301,7 +2301,7 @@ img {
 	}
 
 		header.major:after {
-			background: #e44c65;
+			background:#f9c203; /* #e44c65; */
 			content: '';
 			display: inline-block;
 			height: 0.2em;
@@ -4244,7 +4244,7 @@ img {
 				}
 
 					#navPanel .link:hover {
-						color: #f9c203 !important;
+						color: #f9c203 !important;  /*changed by me*/
 						letter-spacing: 2px;
 					}
 
@@ -4382,19 +4382,19 @@ img {
 
 /* Scroll snapping */
 
-html{
+/* html{
 	scroll-snap-type: y mandatory;
 }
 
 section {
 	/* height: 200vh; */
-	scroll-snap-align: start;
-}  
+	/* scroll-snap-align: start;
+}   */
 
 section #seven, footer {
 	height:auto;
 	scroll-snap-align: start;
-}   
+}    */
 
 /* For nav underline active DOESN'T WORK YET */
 nav ul {
