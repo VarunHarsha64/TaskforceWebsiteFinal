@@ -3763,7 +3763,16 @@ img {
 	body.is-touch #banner {
 		background-attachment: scroll;
 	}
-
+/* Instagram widget */
+	#seven h2::after {
+		background: #f9c203;
+		content: '';
+		display: block;
+		height: 2px;
+		max-width: 288px;
+		width: 20%;
+		margin: 20px 40% 0;
+	}
 /* Footer */
 
 	#footer {
