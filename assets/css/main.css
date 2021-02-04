@@ -4015,7 +4015,9 @@ img {
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
-
+			#nav {        /*Added by me, to hide nav items overflowing in mobile view */
+				display:none;
+			}
 			html, body {
 				overflow-x: hidden;
 			}
