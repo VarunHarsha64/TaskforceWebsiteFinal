@@ -19,6 +19,29 @@
 		<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
+
+
+		<style>
+			#more1, #more2 {
+				display: none;
+				flex-wrap: wrap;
+				flex-direction: row;
+				justify-content: center;
+			}
+			#myBtn1, #myBtn2 {
+				margin: 20px;
+				width: 150px;
+				height: 60px;
+				background-color: #f9c203;
+				border-radius: 4px;
+			}
+			#myBtn1:hover, #myBtn2:hover {
+				background-color: transparent;
+				color: #f9c203;
+			}
+
+		</style>
+
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
@@ -372,7 +395,142 @@
 									</div>
 								</div>
 							</div>
+						</div>
+
+						<button onclick="myFunction1()" id="myBtn1" style="font-family: 'Roboto', sans-serif; font-weight: 900;">Manager</button>
+						<button onclick="myFunction2()" id="myBtn2"style="font-family: 'Roboto', sans-serif; font-weight: 900;">Dy Managers</button>
+						<div id="more1">
+							<div class="image-card">
+								<img src="images/members/Vidhya Sagar.jpg">
+								<div class="info">
+									<div class="text">Vidhya Sagar<br>Manager<br>
+										<!-- <div class="contact-icons">
+											<a href="#" class="icon brands fa-linkedin-in fa-lg" style="color:white"><span class="label">LinkedIn</span></a>
+											<a href="#" class="icon brands fa-instagram fa-lg" style="color:white"><span class="label">Instagram</span></a>
+											<a href="tel:+91 9444134586" class="fa fa-phone fa-rotate-90" style="color:white"><span class="label"></span></a>	
+										</div> -->
+									</div>
+								</div>
+							</div>
+
+							<div class="image-card">
+								<img src="images/members/Vidhya Sagar.jpg">
+								<div class="info">
+									<div class="text">Vidhya Sagar<br>Manager<br>
+										<!-- <div class="contact-icons">
+											<a href="#" class="icon brands fa-linkedin-in fa-lg" style="color:white"><span class="label">LinkedIn</span></a>
+											<a href="#" class="icon brands fa-instagram fa-lg" style="color:white"><span class="label">Instagram</span></a>
+											<a href="tel:+91 9444134586" class="fa fa-phone fa-rotate-90" style="color:white"><span class="label"></span></a>	
+										</div> -->
+									</div>
+								</div>
+							</div>
+
+							<div class="image-card">
+								<img src="images/members/Vidhya Sagar.jpg">
+								<div class="info">
+									<div class="text">Vidhya Sagar<br>Manager<br>
+										<!-- <div class="contact-icons">
+											<a href="#" class="icon brands fa-linkedin-in fa-lg" style="color:white"><span class="label">LinkedIn</span></a>
+											<a href="#" class="icon brands fa-instagram fa-lg" style="color:white"><span class="label">Instagram</span></a>
+											<a href="tel:+91 9444134586" class="fa fa-phone fa-rotate-90" style="color:white"><span class="label"></span></a>	
+										</div> -->
+									</div>
+								</div>
+							</div>
+
+							<div class="image-card">
+								<img src="images/members/Vidhya Sagar.jpg">
+								<div class="info">
+									<div class="text">Vidhya Sagar<br>Manager<br>
+										<!-- <div class="contact-icons">
+											<a href="#" class="icon brands fa-linkedin-in fa-lg" style="color:white"><span class="label">LinkedIn</span></a>
+											<a href="#" class="icon brands fa-instagram fa-lg" style="color:white"><span class="label">Instagram</span></a>
+											<a href="tel:+91 9444134586" class="fa fa-phone fa-rotate-90" style="color:white"><span class="label"></span></a>	
+										</div> -->
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						
+
+						<div id="more2">
+
+							<div class="image-card">
+								<img src="images/members/Shireesha.jpg">
+								<div class="info">
+									<div class="text">Shireesha<br>Manager<br>
+										<!-- <div class="contact-icons">
+											<a href="#" class="icon brands fa-linkedin-in fa-lg" style="color:white"><span class="label">LinkedIn</span></a>
+											<a href="#" class="icon brands fa-instagram fa-lg" style="color:white"><span class="label">Instagram</span></a>
+											<a href="tel:+91 9444134586" class="fa fa-phone fa-rotate-90" style="color:white"><span class="label"></span></a>	
+										</div> -->
+									</div>
+								</div>
+							</div>
+
+							<div class="image-card">
+								<img src="images/members/Shireesha.jpg">
+								<div class="info">
+									<div class="text">Shireesha<br>Manager<br>
+										<!-- <div class="contact-icons">
+											<a href="#" class="icon brands fa-linkedin-in fa-lg" style="color:white"><span class="label">LinkedIn</span></a>
+											<a href="#" class="icon brands fa-instagram fa-lg" style="color:white"><span class="label">Instagram</span></a>
+											<a href="tel:+91 9444134586" class="fa fa-phone fa-rotate-90" style="color:white"><span class="label"></span></a>	
+										</div> -->
+									</div>
+								</div>
+							</div>
+
+							<div class="image-card">
+								<img src="images/members/Shireesha.jpg">
+								<div class="info">
+									<div class="text">Shireesha<br>Manager<br>
+										<!-- <div class="contact-icons">
+											<a href="#" class="icon brands fa-linkedin-in fa-lg" style="color:white"><span class="label">LinkedIn</span></a>
+											<a href="#" class="icon brands fa-instagram fa-lg" style="color:white"><span class="label">Instagram</span></a>
+											<a href="tel:+91 9444134586" class="fa fa-phone fa-rotate-90" style="color:white"><span class="label"></span></a>	
+										</div> -->
+									</div>
+								</div>
+							</div>
+
+
+						</div>
 							
+
+
+<script>
+function myFunction1() {
+  var morePics1 = document.getElementById("more1");
+  
+  var btnText1 = document.getElementById("myBtn1");
+  
+  if (morePics1.style.display === "none") {
+	btnText1.innerHTML = "Close"; 
+	morePics1.style.display = "flex";
+    
+  } else {
+    btnText1.innerHTML = "Managers"; 
+    morePics1.style.display = "none";
+  }
+};
+
+function myFunction2() {
+	var morePics2 = document.getElementById("more2");
+	var btnText2 = document.getElementById("myBtn2");
+	if (morePics2.style.display === "none") {
+	btnText2.innerHTML = "Close"; 
+	morePics2.style.display = "flex";
+
+	} else {
+	btnText2.innerHTML = "Dy Managers"; 
+	morePics2.style.display = "none";
+	}
+};
+</script>
 						</div>
 						
 						<!-- <a href="#seven" class="goto-next scrolly">Next</a> -->
