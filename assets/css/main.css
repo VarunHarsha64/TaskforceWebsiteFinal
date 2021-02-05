@@ -3745,7 +3745,20 @@ img {
 				transform: translateX(0);
 			}
 		}
-
+		@keyframes bottomFade {
+			from {
+				opacity: 0;
+				transform: translateY(2000px);
+				-ms-transform: translateY(2000px);
+				-webkit-transform: translateY(2000px);
+			}
+			to {
+				opacity: 1;
+				-webkit-transform: translateY(0);
+				-ms-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
 		@keyframes opening{   /*banner image png animation */
 			from {transform: scale(2);}
 			to {transform: scale(1);}
@@ -3756,17 +3769,24 @@ img {
 		}
 		#banner .content p{
 			/* padding-top: 20px; */
-			text-transform: uppercase;
+			/* text-transform: uppercase; */
 			font-weight: bold;
+			color: #000a57;
 		}
-		
+		#bottomFade {
+			animation: bottomFade;
+			animation-duration: 1s;
+			animation-iteration-count: 1;
+			padding: 20px 0 0;
+			margin: 0;
+		}
 		#LeftFade {
 			animation-name: fadeinLeft;
 			animation-duration: 1s;
 			animation-iteration-count: 1;
 			padding: 20px 0 0;
 			margin: 0;
-			color: darkblue;
+			/* color: darkblue; */
 		}
 		#RightFade {
 			animation-name: fadeinRight;
@@ -3774,7 +3794,7 @@ img {
 			animation-iteration-count: 1;
 			padding: 0;
 			margin: 0;
-			color: darkblue;
+			/* color: darkblue; */
 		}
 		@media screen and (min-width: 1400px) {
 			#banner-logo{
