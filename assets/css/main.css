@@ -3766,17 +3766,27 @@ img {
 		#banner .content img {
 			animation-name: opening;
 			animation-duration: 1s;
+			display: block;
+			margin-left: auto; 
+			margin-right: auto;
+
 		}
 		#banner .content p{
 			/* padding-top: 20px; */
 			/* text-transform: uppercase; */
 			font-weight: bold;
-			color: #000a57;
+			color: #40071c;  
+		} 
+
+		@media screen and (min-width: 1040px) {
+			#banner .content p {
+				font-size: 23px;
+			}
 		}
 		#bottomFade {
 			animation: bottomFade;
 			animation-duration: 1s;
-			animation-iteration-count: 1;
+			animation-iteration-count: 1;  
 			padding: 20px 0 0;
 			margin: 0;
 		}
