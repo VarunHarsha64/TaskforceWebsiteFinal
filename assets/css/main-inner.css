@@ -2301,7 +2301,7 @@ img {
 	}
 
 		header.major:after {
-			background: #e44c65;
+			background: #f9c203; /* changed from red */
 			content: '';
 			display: inline-block;
 			height: 0.2em;
@@ -3698,6 +3698,22 @@ img {
 		text-align: center;
 	}
 
+	#footer h2 {
+		font-size: 2em;
+		line-height: 1.5em;
+		letter-spacing: -0.025em;
+	}
+
+	#footer h2::after {
+		background: #f9c203;
+		content: '';
+		display: block;
+		height: 2px;
+		max-width: 288px;
+		width: 20%;
+		margin: 20px 40% 0;
+	}
+
 		#footer .icons .icon.alt {
 			text-decoration: none;
 		}
@@ -4094,8 +4110,8 @@ img {
 					}
 
 					#titleBar .toggle:before {
-						background: #e44c65; 
-						color: rgba(255, 255, 255, 0.5);
+						background: transparent; 
+						color: #f9c203;  /* changed from default */
 						content: '\f0c9';
 						display: block;
 						font-size: 18px;
@@ -4405,13 +4421,13 @@ img {
 	cursor: pointer;
 	height: 15px; width: 15px;
 	margin: 0 2px;
-	background-color: #bbb;
+	background-color: darkslategrey;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
-	background-color: darkslategrey;
+	background-color:#bbb;
 }
 
 /*fading animation */
