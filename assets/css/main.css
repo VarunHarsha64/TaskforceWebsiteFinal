@@ -3776,6 +3776,7 @@ img {
 			/* text-transform: uppercase; */
 			font-weight: bold;
 			color: #40071c;  
+			text-shadow: 0 0 3px #4a00b8a6;
 		} 
 
 		@media screen and (min-width: 1040px) {
