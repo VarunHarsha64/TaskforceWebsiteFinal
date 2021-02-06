@@ -4160,7 +4160,8 @@ img {
 				}
 
 					#navPanel .link:hover {
-						color: inherit !important;
+						color: #f9c203 !important; /* changed by me */
+						letter-spacing: 2px;
 					}
 
 					#navPanel .link:first-child {
