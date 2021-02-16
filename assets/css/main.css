@@ -227,6 +227,57 @@ img {
 	}
 }
 
+/* For buttons in team members photos - managers/dy managers - hide/show */
+#more1, #more2 {
+	/* display: none; */
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+#myBtn1, #myBtn2 {
+	margin: 20px;
+	width: 300px;
+	height: 60px;
+	background-color: #f9c203;
+	border-radius: 4px;
+}
+
+@media screen and (max-width:600px) {
+	#myBtn1, #myBtn2 {
+		width: 70%;
+	}
+}
+#myBtn1:hover, #myBtn2:hover {
+	background-color: transparent;
+	color: #f9c203;
+}
+@media screen and (min-width:770px) {
+.icon-bar {
+position: absolute;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+z-index: 90;
+}
+
+.icon-bar a {
+display: block;
+text-align: center;
+padding: 16px;
+transition: all 0.3s ease;
+color: white;
+font-size: 30px;
+}
+}
+
+@media screen and (max-width:769px) {
+.icon-bar a{
+	display:none;
+}
+}
+
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
