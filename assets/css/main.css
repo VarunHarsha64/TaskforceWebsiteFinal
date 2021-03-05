@@ -3905,7 +3905,7 @@ font-size: 30px;
 		background-attachment: scroll;
 	}
 /* Instagram widget */
-	#seven h2::after {
+	#eight h2::after {
 		background: #f9c203;
 		content: '';
 		display: block;
