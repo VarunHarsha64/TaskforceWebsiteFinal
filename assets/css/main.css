@@ -4518,9 +4518,15 @@ font-size: 30px;
 
 	}
 
-.icons li a:hover{
+.icons li a:hover{                    /* for icons in footer */
 	/* font-size: 17px; */
 	transform: scale(1.5);
+}
+
+.icon-bar a:hover{                 /* for icons in banner */
+	/* font-size: 17px; */
+	transform: scale(1.5);
+	color: white !important;
 }
 
 /* Scroll snapping */
@@ -4537,7 +4543,7 @@ section {
 section #seven, footer {
 	height:auto;
 	scroll-snap-align: start;
-}    */
+}    
 
 /* For nav underline active DOESN'T WORK YET */
 nav ul {
