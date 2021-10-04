@@ -4,6 +4,8 @@ and administrative support system at NIT Trichy.
 Feedback and comments are welcome :)
 
 -Karthik 
+-Rajneesh Pandey
+-Ayush Shukla
 
 
 Credits:
