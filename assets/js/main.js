@@ -247,4 +247,16 @@
 		$banner
 			._parallax();
 
+	
+	// Lazy loading images (in the background) that are not in viewport in the beginning to improve load time.
+	$window.on('load', function() {
+		var lazyloadImages = document.querySelectorAll("img.lazy");    
+	
+		lazyloadImages.forEach(function(img) {
+			
+				img.src = img.dataset.src;
+				img.classList.remove('lazy');
+		})
+	});
+
 })(jQuery);
