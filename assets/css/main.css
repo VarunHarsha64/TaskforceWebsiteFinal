@@ -228,13 +228,13 @@ img {
 }
 
 /* For buttons in team members photos - managers/dy managers - hide/show */
-#more1, #more2, #more3 {
+#more1, #more2, #more3, #more4 {
 	/* display: none; */
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
 }
-#myBtn1, #myBtn2, #myBtn3 {
+#myBtn1, #myBtn2, #myBtn3, #myBtn4 {
 	margin: 20px;
 	width: 300px;
 	height: 60px;
@@ -243,11 +243,11 @@ img {
 }
 
 @media screen and (max-width:600px) {
-	#myBtn1, #myBtn2,#myBtn3 {
+	#myBtn1, #myBtn2,#myBtn3, #myBtn4 {
 		width: 70%;
 	}
 }
-#myBtn1:hover, #myBtn2:hover, #myBtn3:hover {
+#myBtn1:hover, #myBtn2:hover, #myBtn3:hover, #myBtn4:hover {
 	background-color: transparent;
 	color: #f9c203;
 }
