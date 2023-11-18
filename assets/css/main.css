@@ -115,9 +115,9 @@ div.image-card {
 	background-position: center;
 	position:relative;
 	margin: 10px;
-	width: 360px;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
+	width: 270px;
+	/* border-top-left-radius: 4px;
+	border-top-right-radius: 4px; */
 	transition: transform 0.2s;  /* for image card zoom on hover */
 }
 
@@ -156,7 +156,7 @@ img {
 	white-space: nowrap;
 	color: white; /*black; */
 	font-weight: bold;
-	font-size:18px;
+	font-size:15px;
 	position: absolute;
 	overflow:hidden;
 	top:50%;
@@ -236,15 +236,16 @@ img {
 }
 #myBtn1, #myBtn2, #myBtn3, #myBtn4 {
 	margin: 20px;
-	width: 300px;
+	width: 250px;
 	height: 60px;
 	background-color: #f9c203;
 	border-radius: 4px;
+	margin-top: 50px	;
 }
 
 @media screen and (max-width:600px) {
 	#myBtn1, #myBtn2,#myBtn3, #myBtn4 {
-		width: 70%;
+		width: 50%;
 	}
 }
 #myBtn1:hover, #myBtn2:hover, #myBtn3:hover, #myBtn4:hover {
