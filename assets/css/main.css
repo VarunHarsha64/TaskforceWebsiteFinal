@@ -109,6 +109,10 @@ div.info {
 }  */
 
 
+.core-img {
+	height: 350px;
+}
+
 div.image-card {
 	background-size:cover;
 	background-repeat: no-repeat;
@@ -125,7 +129,7 @@ div.image-card {
 img {
 	display:block;
 	width:100%;
-	height:auto ;
+	height: auto;
 /*	height:348px; */
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
