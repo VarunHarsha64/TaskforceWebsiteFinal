@@ -108,7 +108,6 @@ div.info {
 	padding: 1px 10px;
 }  */
 
-
 .core-img {
 	height: 350px;
 }
@@ -120,10 +119,15 @@ div.image-card {
 	position:relative;
 	margin: 10px;
 	width: 270px;
+	height: 300px;
+	overflow: hidden;
 	/* border-top-left-radius: 4px;
 	border-top-right-radius: 4px; */
-	transition: transform 0.2s;  /* for image card zoom on hover */
+	transition: transform 0.2s; 
+	position: relative; /* for image card zoom on hover */
 }
+
+
 
 
 img {
@@ -154,6 +158,53 @@ img {
 
 .image-card:hover {            /* for image card zoom on hover */
 	transform: scale(1.03);
+}
+
+.swarnika img{
+	transform: scale(1.8);
+	position: absolute;
+	top: 70px;
+	left: -10px;
+}
+
+.pritesh img {
+	position: absolute;
+	top: -70px;
+}
+
+.mona img {
+	transform: scale(1.9);
+	position: absolute;
+	top: -200px;
+}
+
+.rashmi img {
+	position: absolute;
+	top: -150px;
+}
+
+.gokul img {
+	transform: scale(1.75);
+	position: absolute;
+	top: 50px;
+	left: 70px;
+}
+
+.dharani img {
+	transform: scale(2);
+	position: absolute;
+	top: -150px;
+}
+
+.siva img {
+	transform: scale(2);
+	position: absolute;
+}
+
+.parshana img {
+	transform: scale(1.5);
+	position: absolute;
+	top: 50px;
 }
 
 .text {
