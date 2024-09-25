@@ -125,9 +125,12 @@ div.image-card {
 	border-top-right-radius: 4px; */
 	transition: transform 0.2s; 
 	position: relative; /* for image card zoom on hover */
+	background-color: black;
 }
 
-
+div .full-card {
+	height: auto;
+}
 
 
 img {
@@ -154,6 +157,10 @@ img {
 
 .image-card:hover .info {
 	height:30%;
+}
+
+.full-card:hover .info {
+	height: 50%;
 }
 
 .image-card:hover {            /* for image card zoom on hover */
@@ -205,6 +212,15 @@ img {
 	transform: scale(1.5);
 	position: absolute;
 	top: 50px;
+}
+
+.siva-prietha img{
+	transform: scale(1.3);
+
+}
+
+.sakithya img{
+	transform: scale(2);
 }
 
 .text {
